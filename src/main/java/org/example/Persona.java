@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 public class Persona {
 
-    public String Name;
-    public int Age;
-    public LocalDate Date;
+    private String Name;
+    private int Age;
+    private LocalDate Date;
 
     public Persona(String name, int age, LocalDate date) {
         Name = name;
@@ -14,5 +14,28 @@ public class Persona {
         Date = date;
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
+    }
+
+    public LocalDate getDate() {
+        return Date;
+    }
+
+    public void setDate(LocalDate date) {
+        Date = date;
+    }
 }
 
