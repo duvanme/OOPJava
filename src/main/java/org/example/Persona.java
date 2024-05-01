@@ -6,12 +6,12 @@ public class Persona {
 
     private String Name;
     private int Age;
-    private LocalDate Date;
+    private LocalDate Dateofbirth;
 
-    public Persona(String name, int age, LocalDate date) {
+    public Persona(String name, int age, LocalDate dateofbirth) {
         Name = name;
         Age = age;
-        Date = date;
+        Dateofbirth = dateofbirth;
     }
 
     public String getName() {
@@ -26,16 +26,24 @@ public class Persona {
         return Age;
     }
 
-    public void setAge(int age) {
+    public void setAge(int age) throws IllegalArgumentException{
+        if (age <= 0 || age >= 110){
+            throw new IllegalArgumentException("La edad debe ser mayor a cero y menor que 110");
+        }
         Age = age;
     }
 
     public LocalDate getDate() {
-        return Date;
+
+        return Dateofbirth;
     }
 
-    public void setDate(LocalDate date) {
-        Date = date;
+    public void setDate(LocalDate dateofbirth) throws IllegalArgumentException{
+        if (dateofbirth.isAfter(LocalDate.now())) {
+            throw new IllegalArgumentException("La fecha de nacimiento debe ser anterior al día de hoy.");
+        }
+        Dateofbirth = dateofbirth;
     }
 }
+
 
