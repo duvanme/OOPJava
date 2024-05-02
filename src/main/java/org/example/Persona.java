@@ -44,6 +44,15 @@ public class Persona {
         }
         Dateofbirth = dateofbirth;
     }
+
+    public LocalDate calcularFechaNacimiento(){
+        int anio = 2024-this.Age;
+        LocalDate fecha = LocalDate.now();
+        int mes = fecha.getMonthValue();
+        int dia = fecha.getDayOfMonth();
+        LocalDate fechaDeNacimientoEstimada = LocalDate.of(anio,mes,dia);
+        return fechaDeNacimientoEstimada;
+    }
 }
 
 
