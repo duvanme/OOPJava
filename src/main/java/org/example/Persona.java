@@ -53,6 +53,15 @@ public class Persona {
         LocalDate fechaDeNacimientoEstimada = LocalDate.of(anio,mes,dia);
         return fechaDeNacimientoEstimada;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "Name='" + Name + '\'' +
+                ", Age=" + Age +
+                ", Dateofbirth=" + Dateofbirth +
+                '}';
+    }
 }
 
 
