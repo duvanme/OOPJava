@@ -11,4 +11,14 @@ public class Estudiante extends Persona{
         Grado = grado;
 
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "Name='" + getName() + '\'' +
+                ", Age=" + getAge() + '\'' +
+                ", Dateofbirth=" + getDate() +
+                ", Grado=" + Grado +
+                '}';
+    }
 }
