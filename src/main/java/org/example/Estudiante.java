@@ -2,7 +2,7 @@ package org.example;
 
 import java.time.LocalDate;
 
-public class Estudiante extends Persona{
+public class Estudiante extends Persona implements Trabajador{
     private String Grado;
 
     public Estudiante(String grado, String name, int age, LocalDate dateofbirth){
@@ -20,5 +20,10 @@ public class Estudiante extends Persona{
                 ", Dateofbirth=" + getDate() +
                 ", Grado=" + Grado +
                 '}';
+    }
+
+    @Override
+    public void realizarTarea() {
+        System.out.println("Realizando tarea escolar");
     }
 }
