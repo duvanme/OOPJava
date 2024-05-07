@@ -4,9 +4,17 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello world!");
+        //Gerente
+
+        Gerente gerente = new Gerente(1,"Duvan Mendoza", 28, 2500000,800000);
+        System.out.println(gerente.calcularSalario());
+
+        Vendedor vendedor = new Vendedor(1,"Duvan Mendoza", 28, 1500000,300000);
+        System.out.println(vendedor.calcularSalario());
+
+        General general = new General(1,"Duvan Mendoza", 28, 1200000,150000);
+        System.out.println(general.calcularSalario());
+
     }
 }
 
