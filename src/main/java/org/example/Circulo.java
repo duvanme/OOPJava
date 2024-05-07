@@ -16,4 +16,13 @@ public class Circulo extends FiguraGeometrica{
         this.radio = radio;
     }
 
+    @Override
+    public String Area(){
+        return "El área del círculo es " + this.radio*this.radio*3.14;
+    };
+
+    @Override
+    public String Perimetro(){
+        return "La circunferencia del círculo es " + 2*this.radio*3.14;
+    };
 }
