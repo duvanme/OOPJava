@@ -12,9 +12,8 @@ public class Main {
                 "Cristian Mendoza",
                 22, LocalDate.of(2002,02,10)
         );
-
-        System.out.println(univerisario.toString());
         univerisario.realizarTarea();
+
     }
 }
 

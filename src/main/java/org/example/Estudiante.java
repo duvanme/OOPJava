@@ -12,6 +12,14 @@ public class Estudiante extends Persona implements Trabajador{
 
     }
 
+    public String getGrado() {
+        return Grado;
+    }
+
+    public void setGrado(String grado) {
+        Grado = grado;
+    }
+
     @Override
     public String toString() {
         return "Persona{" +
@@ -26,4 +34,5 @@ public class Estudiante extends Persona implements Trabajador{
     public void realizarTarea() {
         System.out.println("Realizando tarea escolar");
     }
+
 }
