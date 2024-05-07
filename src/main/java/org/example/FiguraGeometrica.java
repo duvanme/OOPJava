@@ -1,6 +1,6 @@
 package org.example;
 
-public class FiguraGeometrica {
+public class FiguraGeometrica implements IFiguraGeometrica{
     private String nombre;
     private String color;
 
@@ -25,4 +25,12 @@ public class FiguraGeometrica {
         this.color = color;
     }
 
+    @Override
+    public String Area(){
+        return "Retorno el área de la figura";
+    };
+    @Override
+    public String Perimetro(){
+        return "Retorno el perímetro de la figura";
+    };
 }
