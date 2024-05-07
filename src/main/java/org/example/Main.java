@@ -13,8 +13,21 @@ public class Main {
                 22, LocalDate.of(2002,02,10)
         );
         univerisario.realizarTarea();
+        System.out.println("\n\n");
+        //Empleado
 
-    }
+        Persona Empleado = new Persona
+                ("Duvan Mendoza",
+                        22,
+                        LocalDate.of(1996,02,10)
+                ){
+                public void realizarTarea() {
+                System.out.println("Realizando tarea laboral");
+        };
+    };
+
+        Empleado.realizarTarea();
+}
 }
 
 

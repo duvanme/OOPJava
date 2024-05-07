@@ -2,7 +2,7 @@ package org.example;
 
 import java.time.LocalDate;
 
-public class Persona {
+public class Persona implements Trabajador{
 
     private String Name;
     private int Age;
@@ -61,6 +61,11 @@ public class Persona {
                 ", Age=" + Age +
                 ", Dateofbirth=" + Dateofbirth +
                 '}';
+    }
+
+    @Override
+    public void realizarTarea() {
+        System.out.println("Tarea de Persona"); // Or specific implementation
     }
 
 }

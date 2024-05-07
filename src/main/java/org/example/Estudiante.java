@@ -2,7 +2,7 @@ package org.example;
 
 import java.time.LocalDate;
 
-public class Estudiante extends Persona implements Trabajador{
+public class Estudiante extends Persona{
     private String Grado;
 
     public Estudiante(String grado, String name, int age, LocalDate dateofbirth){
